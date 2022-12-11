@@ -1,0 +1,135 @@
+2022-12-11 20:11:12,133 | INFO | ************
+2022-12-11 20:11:12,133 | INFO | Startking testing...
+2022-12-11 20:11:12,133 | INFO | ************
+2022-12-11 20:11:12,427 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:11:12,432 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:11:12,441 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:11:12,447 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:11:12,455 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:11:12,461 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:11:12,467 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:12:03,637 | INFO | ************
+2022-12-11 20:12:03,637 | INFO | Starting testing...
+2022-12-11 20:12:03,637 | INFO | ************
+2022-12-11 20:12:03,948 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:12:03,954 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:12:03,963 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:12:03,971 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:12:03,977 | ERROR | test_create_company_with_wrong_status raised exception: 400 != 404
+2022-12-11 20:12:03,984 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:12:03,991 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:12:29,021 | INFO | ************
+2022-12-11 20:12:29,021 | INFO | Starting testing...
+2022-12-11 20:12:29,021 | INFO | ************
+2022-12-11 20:12:29,320 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:12:29,326 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:12:29,334 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:12:29,342 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:12:29,348 | ERROR | test_create_company_with_wrong_status raised exception: 400 != 200
+2022-12-11 20:12:29,354 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:12:29,361 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:12:38,020 | INFO | ************
+2022-12-11 20:12:38,021 | INFO | Starting testing...
+2022-12-11 20:12:38,021 | INFO | ************
+2022-12-11 20:12:38,315 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:12:38,320 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:12:38,329 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:12:38,336 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:12:38,343 | ERROR | test_create_company_with_wrong_status raised exception: 201 != 200
+2022-12-11 20:12:38,349 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:12:38,356 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:13:03,805 | INFO | ************
+2022-12-11 20:13:03,805 | INFO | Starting testing...
+2022-12-11 20:13:03,805 | INFO | ************
+2022-12-11 20:13:04,096 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:13:04,102 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:13:04,110 | ERROR | test_create_comapny_with_layoffs_status_should_success raised exception: 201 != 400
+2022-12-11 20:13:04,117 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:13:04,123 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:13:04,129 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:13:04,136 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:14:10,488 | INFO | ************
+2022-12-11 20:14:10,489 | INFO | Starting testing...
+2022-12-11 20:14:10,489 | INFO | ************
+2022-12-11 20:14:10,781 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:14:10,787 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:14:10,795 | ERROR | test_create_comapny_with_layoffs_status_should_success raised exception: 201 != 400
+2022-12-11 20:14:10,803 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:14:10,809 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:14:10,815 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:14:10,822 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:15:12,426 | INFO | ************
+2022-12-11 20:15:12,426 | INFO | Starting testing...
+2022-12-11 20:15:12,426 | INFO | ************
+2022-12-11 20:15:12,720 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:15:12,726 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:15:12,734 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:15:12,742 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:15:12,748 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:15:12,754 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:15:12,761 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:16:23,310 | INFO | ************
+2022-12-11 20:16:23,310 | INFO | Starting testing...
+2022-12-11 20:16:23,311 | INFO | ************
+2022-12-11 20:16:23,604 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:16:23,609 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:16:23,617 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:16:23,625 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:16:23,631 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:16:23,638 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:16:23,645 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:17:13,446 | INFO | ************
+2022-12-11 20:17:13,446 | INFO | Starting testing...
+2022-12-11 20:17:13,446 | INFO | ************
+2022-12-11 20:17:13,739 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:17:13,744 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:17:13,753 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:17:13,762 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:17:13,769 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:17:13,776 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:17:13,783 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:17:25,455 | INFO | ************
+2022-12-11 20:17:25,455 | INFO | Starting testing...
+2022-12-11 20:17:25,455 | INFO | ************
+2022-12-11 20:17:25,752 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:17:25,757 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:17:25,766 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:17:25,774 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:17:25,791 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:17:25,798 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:17:33,707 | INFO | ************
+2022-12-11 20:17:33,707 | INFO | Starting testing...
+2022-12-11 20:17:33,707 | INFO | ************
+2022-12-11 20:17:34,000 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:17:34,006 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:17:34,014 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:17:34,021 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:17:34,028 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:17:34,034 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:17:34,041 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:18:12,984 | INFO | ************
+2022-12-11 20:18:12,984 | INFO | Starting testing...
+2022-12-11 20:18:12,984 | INFO | ************
+2022-12-11 20:18:13,277 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:18:13,282 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:18:13,290 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:18:13,298 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:18:13,304 | INFO | Run test test_create_company_with_wrong_status with success
+2022-12-11 20:18:13,310 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:18:13,317 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:18:21,890 | INFO | ************
+2022-12-11 20:18:21,890 | INFO | Starting testing...
+2022-12-11 20:18:21,890 | INFO | ************
+2022-12-11 20:18:22,199 | INFO | Run test test_one_company_exists_should_success with success
+2022-12-11 20:18:22,204 | INFO | Run test test_zero_comapnies_return_empty_list with success
+2022-12-11 20:18:22,213 | INFO | Run test test_create_comapny_with_layoffs_status_should_success with success
+2022-12-11 20:18:22,220 | INFO | Run test test_create_company_only_with_name with success
+2022-12-11 20:18:22,227 | ERROR | test_create_company_with_wrong_status raised exception: 400 != 201
+2022-12-11 20:18:22,234 | INFO | Run test test_create_company_without_args with success
+2022-12-11 20:18:22,241 | INFO | Run test test_create_existing_comapny_should_fail with success
+2022-12-11 20:21:48,282 | INFO | ************
+2022-12-11 20:21:48,282 | INFO | Starting testing...
+2022-12-11 20:21:48,282 | INFO | ************
+2022-12-11 20:22:00,680 | INFO | ************
+2022-12-11 20:22:00,680 | INFO | Starting testing...
+2022-12-11 20:22:00,680 | INFO | ************
