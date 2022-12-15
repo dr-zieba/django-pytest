@@ -5,7 +5,9 @@ import logging
 import django_pytest
 from companies.models import Company
 import pytest
-from fixtures import time_tracker
+from fixtures import time_tracker, track_performace
+from django.test import Client
+from time import sleep
 
 if not settings.configured:
     settings.configure(django_pytest, DEBUG=True)
@@ -30,13 +32,17 @@ pytestmark = pytest.mark.django_db
 """*********TEST GET COMPANIES**********"""
 
 
-def test_zero_companies_return_empty_list(time_tracker, client) -> None:
+@pytest.mark.performance
+@track_performace
+def test_zero_companies_return_empty_list() -> None:
+    client = Client()
+    sleep(3)
     response = client.get(companies_url)
     assert response.status_code == 200
     assert json.loads(response.content) == []
 
 
-def test_one_company_exists_should_success(time_tracker,client) -> None:
+def test_one_company_exists_should_success(time_tracker, client) -> None:
     test_company = Company.objects.create(name="XXXAAA")
     response = client.get(companies_url)
     response_content = json.loads(response.content)[0]
@@ -77,7 +83,9 @@ def test_create_company_only_with_name(time_tracker, client) -> None:
     assert response_content.get("notes") == ""
 
 
-def test_create_comapny_with_layoffs_status_should_success(time_tracker, client) -> None:
+def test_create_comapny_with_layoffs_status_should_success(
+    time_tracker, client
+) -> None:
     response = client.post(
         companies_url, data={"name": "Mercedes", "status": "Layoffs"}
     )
