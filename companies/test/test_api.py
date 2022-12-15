@@ -5,6 +5,7 @@ import logging
 import django_pytest
 from companies.models import Company
 import pytest
+from fixtures import time_tracker
 
 if not settings.configured:
     settings.configure(django_pytest, DEBUG=True)
@@ -29,13 +30,13 @@ pytestmark = pytest.mark.django_db
 """*********TEST GET COMPANIES**********"""
 
 
-def test_zero_companies_return_empty_list(client) -> None:
+def test_zero_companies_return_empty_list(time_tracker, client) -> None:
     response = client.get(companies_url)
     assert response.status_code == 200
     assert json.loads(response.content) == []
 
 
-def test_one_company_exists_should_success(client) -> None:
+def test_one_company_exists_should_success(time_tracker,client) -> None:
     test_company = Company.objects.create(name="XXXAAA")
     response = client.get(companies_url)
     response_content = json.loads(response.content)[0]
@@ -48,7 +49,7 @@ def test_one_company_exists_should_success(client) -> None:
 """*********TEST POST COMPANIES**********"""
 
 
-def test_create_company_without_args(client) -> None:
+def test_create_company_without_args(time_tracker, client) -> None:
     response = client.post(companies_url)
     assert response.status_code == 400
     assert (
@@ -56,7 +57,7 @@ def test_create_company_without_args(client) -> None:
     )
 
 
-def test_create_existing_comapny_should_fail(client) -> None:
+def test_create_existing_comapny_should_fail(time_tracker, client) -> None:
     Company.objects.create(name="Opel")
     response = client.post(companies_url, data={"name": "Opel"})
     assert response.status_code == 400
@@ -66,7 +67,7 @@ def test_create_existing_comapny_should_fail(client) -> None:
     )
 
 
-def test_create_company_only_with_name(client) -> None:
+def test_create_company_only_with_name(time_tracker, client) -> None:
     response = client.post(companies_url, data={"name": "BMW"})
     assert response.status_code == 201
     response_content = json.loads(response.content)
@@ -76,7 +77,7 @@ def test_create_company_only_with_name(client) -> None:
     assert response_content.get("notes") == ""
 
 
-def test_create_comapny_with_layoffs_status_should_success(client) -> None:
+def test_create_comapny_with_layoffs_status_should_success(time_tracker, client) -> None:
     response = client.post(
         companies_url, data={"name": "Mercedes", "status": "Layoffs"}
     )
@@ -86,7 +87,7 @@ def test_create_comapny_with_layoffs_status_should_success(client) -> None:
     assert response_content.get("status") == "Layoffs"
 
 
-def test_create_company_with_wrong_status(client) -> None:
+def test_create_company_with_wrong_status(time_tracker, client) -> None:
     response = client.post(companies_url, data={"name": "Audi", "status": "layoffs111"})
     assert response.status_code == 400
     assert "is not a valid " in str(response.content)
